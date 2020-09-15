@@ -195,8 +195,8 @@ def need():
 
     global city_job
     global road_job
-    city_job = str(city[three_wind_power_num[0]])
-    road_job = str(road[three_wind_power_num[0]])
+    city_job = str(city[three_wind_power_num[0]] - 100)
+    road_job = str(road[three_wind_power_num[0]] - 100)
 
 
     print(city_job)
@@ -216,7 +216,7 @@ def send():
                     + " 9時" + "　  " + three_temp_str[0] + "        " + three_rain_str[0] + "　　　" + three_wind_power_str[0] + "　　" + three_wind_vector[0] + "\n"
                     + "15時" + "　" + three_temp_str[1] + "　　 " + three_rain_str[1] + "　　　" + three_wind_power_str[1] + "　　" + three_wind_vector[1] + "\n"
                     + "18時" + "　" + three_temp_str[2] + "　　 " + three_rain_str[2] + "　　　" + three_wind_power_str[2] + "　　" + three_wind_vector[2] + "\n"
-                    + "<コメント>\n" + rain_gear + "("  + wear + ")\n" + coment + "\n" + "　" + city_job + "W（ママチャリ）\n" + "　" + road_job + "W（ロード）\n")
+                    + "<コメント>\n" + rain_gear + "("  + wear + ")\n" + coment + "\n" + "　" + city_job + "（ママチャリ）\n" + "　" + road_job + "（ロード）\n")
     
     
 def job():
